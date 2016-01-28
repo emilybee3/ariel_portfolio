@@ -1,53 +1,90 @@
 <!DOCTYPE html>
 <html>
     <head>
-                                   <!-- BOOTSTRAP, CSS, FONT ADDED -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="Ariel_Portfolio/stylesheet.css">
+                <!-- BOOTSTRAP, CSS, FONT ADDED -->
+        <!-- // <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item  >p ,
+  .carousel-inner > .item > p {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+
+        <link rel="stylesheet" href="stylesheet.css">
         
         <title>
             Ariel's Portfolio
-        </title>
+        </title>                        
     </head>
 
     <body> 
-        
-        <div id="about" class="panel"> 
-            <p> About Ariel and Lionhearted Stuff </p>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <div class="iframe">
+            <iframe src="https://player.vimeo.com/video/117351425" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+             <p class="description">An Experimental Film by Ariel Sinelnikoff. 2014</p>
+        </div>    
+    </div>
+
+    <div class="item">
+      <div class="iframe">
+         <iframe src="https://player.vimeo.com/video/99294421" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+         <p class="description">Upon attempting to escape her puritanical father&rsquo;s cabin, Mary begins to experience reoccurring paranormal activity that haunts her at night. What she unveils throughout her journey, however, is far more terrifying than the supernatural encounters she believes she is experiencing.<br />
+         <br />
+          A 2014 San Francisco State University thesis film by Ariel Sinelnikoff.</p>
         </div>
+    </div>
 
-        <div id="dorian" class="panel"> 
-            
-           <iframe src="https://player.vimeo.com/video/117351503" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <p>Horror ensues after a man becomes obsessed with a woman he begins to photograph.<br />
-                <br />
-            Directed by Ariel Sinelnikoff<br/><br />
-            2012</p>
-
-        </div>
-
-        <div id="seize" class="panel">
-
-        <iframe src="https://player.vimeo.com/video/117351425" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <p>An Experimental Film by Ariel Sinelnikoff. 2014</p>
-
-        </div>
-
-        <div id="enceinte" class="panel"> 
-
-            <iframe src="https://player.vimeo.com/video/99294421" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <p>Upon attempting to escape her puritanical father&rsquo;s cabin, Mary begins to experience reoccurring paranormal activity that haunts her at night. What she unveils throughout her journey, however, is far more terrifying than the supernatural encounters she believes she is experiencing.<br />
-            <br />
-            A 2014 San Francisco State University thesis film by Ariel Sinelnikoff.</p>
-        
-        </div>
-
-        <div id="harvest" class="panel"> 
+    <div class="item">
+        <div id="harvest" class="iframe"> 
             <iframe src="https://player.vimeo.com/video/84560428" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <p>A woman is unsuspectingly taken advantage of by her doctor in this 16 mm horror film.</p>
-
         </div>
+    </div>
+
+    <div class="item">
+      <div class="iframe" id="dorian">
+            <iframe src="https://player.vimeo.com/video/117351503" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <p>Horror ensues after a man becomes obsessed with a woman he begins to photograph.<br />
+            <br />
+            Directed by Ariel Sinelnikoff<br />
+            <br />
+            2012</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      
+       
+      
         
-        <div id="contact" class="panel"> contact </div>
+     
     
     </body>

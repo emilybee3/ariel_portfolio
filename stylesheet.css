@@ -1,10 +1,50 @@
-body { 
-    width: 8000px; } .panel 
-    { width: 930px; 
-    float: left; 
-    padding-left: 100px; 
-    padding-right: 1040px; } 
+/*
 
-p {
-    width: 562px;
+body {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: block;
+}*/
+
+/*#container {
+    
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+}*/
+
+.iframe{
+    display: block;
+    width: 300px;
+    height: 700px;
+    float: center;
+    margin-left: 145px;
+    margin-right: 0px;
+    border-radius: 20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.iframe > p {
+    width: 700px;
+    float:center;
+}
+
+/*
+
+
+#dorian {
+    margin-right: 0px;
+}
+*/
+/*CSS*/
+div.c-wrapper{
+    width: 80%; /* for example */
+    margin: auto;
+}
+
+
+.carousel-inner > div {
+width: 100%; /* use this, or not */
+margin: auto;
 }
