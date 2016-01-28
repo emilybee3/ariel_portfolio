@@ -18,26 +18,14 @@ body {
     width: 300px;
     height: 700px;
     float: center;
-    margin-left: 145px;
+    margin-left: 250px;
     margin-right: 0px;
     border-radius: 20px;
     margin-top:20px;
     margin-bottom: 20px;
 }
 
-.iframe > p {
-    width: 700px;
-    float:center;
-}
 
-/*
-
-
-#dorian {
-    margin-right: 0px;
-}
-*/
-/*CSS*/
 div.c-wrapper{
     width: 80%; /* for example */
     margin: auto;
@@ -47,4 +35,69 @@ div.c-wrapper{
 .carousel-inner > div {
 width: 100%; /* use this, or not */
 margin: auto;
+}
+
+.panel-seize {
+    width:1500px;
+  background-color: #9ce39c;
+  border-color: #9ce39c;
+}
+
+.panel-enciente{
+    width:1500px;
+  background-color: #9ce39c;
+  border-color: #9ce39c;
+}
+
+
+.panel-dorian{
+    width:1500px;
+  background-color: #9ce39c;
+  border-color: #9ce39c;
+}
+
+.panel-harvest{
+  width:1500px;
+  background-color: #9ce39c;
+  border-color: #9ce39c;
+}
+
+p.description{
+    width:1000px;
+    text-align: center;
+}
+
+div.panel-p {
+    background-color:#ffd700;
+    width:1000px;
+    border-width:1000px;
+
+}
+
+div.panel.panel-default{
+    width:1500px;
+    background-color: #ffd400;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:1000px;
+}
+
+img#brand.img-circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+div.panel-about-ariel {
+    background-image:url(https://i.ytimg.com/vi/HwQEcil06wU/maxresdefault.jpg);
+    width:1500px;
+    height:1000px;
+  border-color: #9ce39c;
 }
