@@ -2,18 +2,17 @@
 <html>
     <head>
                 <!-- BOOTSTRAP, CSS, FONT ADDED -->
-        <!-- // <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
 
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700|Amatic+SC:400,700|Special+Elite|Fredericka+the+Great|Creepster|Walter+Turncoat' rel='stylesheet' type='text/css'>
   <style>
   .carousel-inner > .item  >p ,
   .carousel-inner > .item > p {
-      width: 70%;
+      width: 100%;
       margin: auto;
-  }
+        }
   </style>
 
         <link rel="stylesheet" href="stylesheet.css">
@@ -37,15 +36,40 @@
     <li data-target="#myCarousel" data-slide-to="2"></li>
     <li data-target="#myCarousel" data-slide-to="3"></li>
     <li data-target="#myCarousel" data-slide-to="4"></li>
-    <li data-target="#myCarousel" data-slide-to="5"></li>
   </ol>
+
+
 
   <!-- Wrapper for slides -->
 <div class="carousel-inner" role="listbox">
-    <div class="item active">
+<div class="nav-button">
+    <ol class="carousel-linked-nav pagination">
+        <li class="active"><a href="#1">About Me</a></li>
+    </ol>
+</div>
+        <div class="item active">
+        <div class="about-me">
+            <div class="panel panel-default">
+                <div class= "panel-about-ariel">
+
+                    <div class="img">
+                        <img id="brand" class="img-circle" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Green_eyes_kitten.jpg" width="300" height="300" onmouseover="this.src='https://c2.staticflickr.com/4/3491/3275462804_c2ace60870_z.jpg?zz=1';" onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/9/9e/Green_eyes_kitten.jpg';"/>
+                    </div>
+        
+
+                    <h1>LIONHEARTED PRODUCTIONS</h1>
+                    <div id="about-me">
+                        <p align="center" color="white"> It makes films </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
         <div class="panel panel-default">
                 <div class= "panel-seize">
-                    <div class="iframe">
+                    <div class="iframe" align="center">
                         <iframe src="https://player.vimeo.com/video/117351425" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         <!-- <div class="panel panel-default"> -->
                             <div class= "panel-p">
@@ -60,7 +84,7 @@
     <div class="item">
         <div class="panel panel-default">
             <div class= "panel-enciente">
-                <div class="iframe">
+                <div class="iframe" align="center">
                      <iframe src="https://player.vimeo.com/video/99294421" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                      <!-- <div class="panel panel-default"> -->
                         <div class="panel-p">
@@ -77,7 +101,7 @@
     <div class="item">
         <div class="panel panel-default">
             <div class="panel-harvest">
-                <div id="harvest" class="iframe"> 
+                <div id="harvest" class="iframe" align="center"> 
                     <iframe src="https://player.vimeo.com/video/84560428" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <!-- <div class="panel panel-default"> -->
                         <div class= "panel-p">
@@ -92,7 +116,7 @@
     <div class="item">
         <div class="panel panel-default">
             <div class= "panel-dorian">
-              <div class="iframe" id="dorian">
+              <div class="iframe" id="dorian" align="center">
                     <iframe src="https://player.vimeo.com/video/117351503" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     <!-- <div class="panel panel-default"> -->
                         <div class="panel-p">
@@ -106,22 +130,6 @@
               </div>
             </div>
         </div> 
-    </div>
-
-    <div class=item>
-        <div class="about-me">
-            <div class="panel panel-default">
-                <div class= "panel-about-ariel">
-
-                    <img id="brand" class="img-circle" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Green_eyes_kitten.jpg" width="300" height="300" onmouseover="this.src='https://c2.staticflickr.com/4/3491/3275462804_c2ace60870_z.jpg?zz=1';" onmouseout="this.src='https://upload.wikimedia.org/wikipedia/commons/9/9e/Green_eyes_kitten.jpg';"/>
-        
-
-                    <h1>LIONHEARTED PRODUCTIONS</h1>
-
-                    <p align="center"> It makes films </p>
-                </div>
-            </div>
-        </div>
     </div>
 
 </div>
@@ -138,11 +146,47 @@
     <span class="sr-only">Next</span>
   </a>
 
-</div>
-      
-       
-      
-                        <!-- ABOUT ME -->
+
+</div> <!--END CAROUSEL -->
+
+
+
+<!-- SLIDE ON CLICK -->
+<script>
+    $('.carousel-linked-nav > li > a').click(function() {
+
+        // grab href, remove pound sign, convert to number
+        var item = Number($(this).attr('href').substring(1));
+
+        // slide to number -1 (account for zero indexing)
+        $('#myCarousel').carousel(item - 1);
+
+        // remove current active class
+        $('.carousel-linked-nav .active').removeClass('active');
+
+        // add active class to just clicked on item
+        $(this).parent().addClass('active');
+
+        // don't follow the link
+        return false;
+    });
+
+    /* AUTOPLAY NAV HIGHLIGHT */
+
+    // bind 'slid' function
+    $('#myCarousel').bind('slid', function() {
+
+        // remove active class
+        $('.carousel-linked-nav .active').removeClass('active');
+
+        // get index of currently active item
+        var idx = $('#myCarousel .item.active').index();
+
+        // select currently active item and add active class
+        $('.carousel-linked-nav li:eq(' + idx + ')').addClass('active');
+
+    });     
+</script>
 
 
     

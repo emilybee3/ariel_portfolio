@@ -1,33 +1,18 @@
-/*
 
-body {
-    overflow-y: hidden;
-    overflow-x: scroll;
+div.iframe {
     display: block;
-}*/
-
-/*#container {
-    
-    position: absolute;
-    top: 50%;
-    margin-top: -150px;
-}*/
-
-.iframe{
-    display: block;
-    width: 300px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
     float: center;
-    margin-left: 250px;
+    margin-left: 0px;
     margin-right: 0px;
-    border-radius: 20px;
-    margin-top:20px;
+    padding-top:50px;
     margin-bottom: 20px;
 }
 
 
 div.c-wrapper{
-    width: 80%; /* for example */
+    width: 100%; /* for example */
     margin: auto;
 }
 
@@ -37,67 +22,132 @@ width: 100%; /* use this, or not */
 margin: auto;
 }
 
+div.panel-p {
+    background-image: url("static/simple_border.png");
+    width:1000px;
+    border-width:1000px;
+    border-radius: 10px;
+
+}
+
 .panel-seize {
-    width:1500px;
-  background-color: #9ce39c;
-  border-color: #9ce39c;
+    width:100%;
+
+  background-image: url("static/dark_exa_@2x.png");
+
+  height:1000px;
 }
 
 .panel-enciente{
-    width:1500px;
-  background-color: #9ce39c;
-  border-color: #9ce39c;
+    /*width:1500px;*/
+  background-image: url("static/zwartevilt_@2x.jpg");
+height:1000px;
+  /*border-color: gray;*/
+  width:100%;
+    /*height:100%;*/
 }
 
 
 .panel-dorian{
-    width:1500px;
-  background-color: #9ce39c;
-  border-color: #9ce39c;
+    width:100%;
+  background-image: url("static/dark_exa_@2X.png");
+  height:1000px;
 }
 
 .panel-harvest{
-  width:1500px;
-  background-color: #9ce39c;
-  border-color: #9ce39c;
+    width:100%;
+  background-image: url("static/dark_geometric_@2X.png");
+  height:1000px;
 }
 
 p.description{
     width:1000px;
     text-align: center;
+    padding-top: 90px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-family: "Special Elite";
+    color:black;
 }
 
-div.panel-p {
-    background-color:#ffd700;
-    width:1000px;
-    border-width:1000px;
-
+#about-me{
+    color:white;
+    font-family: "Special Elite";
+    font-size: 17px;
 }
+
 
 div.panel.panel-default{
-    width:1500px;
-    background-color: #ffd400;
-    display: block;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
-    height:1000px;
+    float: center;
 }
 
 img#brand.img-circle {
     display: block;
+    padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    position: static;
 }
 
+.img {
+    padding-top: 50px
+}
 
 
 h1{
     text-align: center;
+    color:white;
+    font-family: "Fredericka the Great";
+
 }
 
 div.panel-about-ariel {
-    background-image:url(https://i.ytimg.com/vi/HwQEcil06wU/maxresdefault.jpg);
-    width:1500px;
+background-image:url("static/use_your_illusion_@2X.png");
+    width:100%;
     height:1000px;
-  border-color: #9ce39c;
+}
+
+.nav-button{
+    position: fixed;
+    z-index: 30;
+    top: 0px;
+    left: 10px;
+}
+
+
+.pagination>.active>a {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    font-size: 16px;
+    font-family: "Special Elite";
+}
+.pagination>.active>a:hover {
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    color: #808080;
+
+}
+.pagination>.active>a:focus {
+background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
 }
