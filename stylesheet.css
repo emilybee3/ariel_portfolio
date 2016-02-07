@@ -20,27 +20,31 @@ div.c-wrapper{
 .carousel-inner > div {
 width: 100%; /* use this, or not */
 margin: auto;
+
 }
 
 div.panel-p {
-    background-image: url("static/simple_border.png");
+    /*background-image: url("static/simple_border.png");*/
     width:1000px;
     border-width:1000px;
     border-radius: 10px;
 
 }
+/*.panel-background {*/
+      /*background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
+      /*url("static/deco4.jpg");*/
 
+
+/*}*/
 .panel-seize {
     width:100%;
 
-  background-image: url("static/dark_exa_@2x.png");
 
   height:1000px;
 }
 
 .panel-enciente{
     /*width:1500px;*/
-  background-image: url("static/zwartevilt_@2x.jpg");
 height:1000px;
   /*border-color: gray;*/
   width:100%;
@@ -50,26 +54,27 @@ height:1000px;
 
 .panel-dorian{
     width:100%;
-  background-image: url("static/dark_exa_@2X.png");
   height:1000px;
 }
 
 .panel-harvest{
     width:100%;
-  background-image: url("static/dark_geometric_@2X.png");
   height:1000px;
 }
 
 p.description{
     width:1000px;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
     font-size: 20px;
     font-family: "Special Elite";
-    color:black;
+    color:white;
+    text-shadow: 2px 2px #000000;
+
+
 }
 
 #about-me{
@@ -84,6 +89,8 @@ div.panel.panel-default{
     margin-left: auto;
     margin-right: auto;
     float: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("static/deco4.jpg");
 }
 
 img#brand.img-circle {
@@ -95,7 +102,7 @@ img#brand.img-circle {
 }
 
 .img {
-    padding-top: 50px
+    padding-top: 100px
 }
 
 
@@ -107,7 +114,6 @@ h1{
 }
 
 div.panel-about-ariel {
-background-image:url("static/use_your_illusion_@2X.png");
     width:100%;
     height:1000px;
 }
@@ -141,8 +147,8 @@ background-color: rgba(0,0,0,0);
 }
 
 .carousel-indicators {
-    position: absolute;
-    bottom: 10px;
+    position: fixed;
+    top: 10px;
     left: 50%;
     z-index: 15;
     width: 60%;
@@ -150,4 +156,17 @@ background-color: rgba(0,0,0,0);
     margin-left: -30%;
     text-align: center;
     list-style: none;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    color: #808080;
+    background-color: #808080;
+}
+.carousel-indicators .active {
+    background-color: white;
 }
